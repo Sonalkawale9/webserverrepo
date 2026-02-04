@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Fruit Shopping List</title>
+    <title>Sonal's Smart Shopping Center</title>
     <style>
-        /* Modern, colorful gradient background */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column; /* Allows content to flow vertically */
             justify-content: center;
             align-items: center;
             margin: 0;
+            padding: 20px;
         }
 
-        /* Glass-morphism card container */
+        /* The new Main Title at the top */
+        .main-title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
         .list-container {
             background: rgba(255, 255, 255, 0.9);
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-            width: 300px;
+            width: 350px;
         }
 
         h2 {
@@ -40,7 +50,7 @@
 
         li {
             background: #fff;
-            margin: 10px 0;
+            margin: 8px 0;
             padding: 12px 15px;
             border-radius: 10px;
             display: flex;
@@ -50,9 +60,8 @@
             border-left: 5px solid #ff9a9e;
         }
 
-        /* Hover effect to make it interactive */
         li:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
             background: #fff0f3;
         }
 
@@ -73,8 +82,10 @@
 </head>
 <body>
 
+    <div class="main-title">Sonal's Smart Shopping Center</div>
+
     <div class="list-container">
-        <h2>Shopping List</h2>
+        <h2>Fresh Fruits</h2>
         <ul>
             <li>
                 <span><span class="emoji">🍎</span><span class="item-name">Apple</span></span>
@@ -87,6 +98,30 @@
             <li>
                 <span><span class="emoji">🍓</span><span class="item-name">Strawberry</span></span>
                 <span class="price">$40/pack</span>
+            </li>
+            <li>
+                <span><span class="emoji">🥭</span><span class="item-name">Mango</span></span>
+                <span class="price">$5/kg</span>
+            </li>
+            <li>
+                <span><span class="emoji">🍇</span><span class="item-name">Grapes</span></span>
+                <span class="price">$3/box</span>
+            </li>
+            <li>
+                <span><span class="emoji">🍍</span><span class="item-name">Pineapple</span></span>
+                <span class="price">$4/each</span>
+            </li>
+            <li>
+                <span><span class="emoji">🍊</span><span class="item-name">Orange</span></span>
+                <span class="price">$2.5/kg</span>
+            </li>
+            <li>
+                <span><span class="emoji">🍉</span><span class="item-name">Watermelon</span></span>
+                <span class="price">$6/each</span>
+            </li>
+            <li>
+                <span><span class="emoji">🥝</span><span class="item-name">Kiwi</span></span>
+                <span class="price">$1/piece</span>
             </li>
         </ul>
     </div>
